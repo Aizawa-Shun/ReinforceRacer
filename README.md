@@ -88,7 +88,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For any questions or inquiries, please contact [your email address].
+For any questions or inquiries, please contact [your email address](tech.code.team@gmail.com)..
 
 ---
 
