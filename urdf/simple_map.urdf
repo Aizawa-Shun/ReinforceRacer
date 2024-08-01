@@ -1,0 +1,143 @@
+<?xml version="1.0" ?>
+<robot name="map">
+
+  <link name="wall_inside">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="10000"/>
+      <inertia ixx="0.283" ixy="0" ixz="0" iyy="7.575" iyz="0" izz="7.708"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="5 5 0.4"/>
+      </geometry>
+      <material name="blockmat">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="5 5 0.4"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="wall_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="10000"/>
+      <inertia ixx="0.283" ixy="0" ixz="0" iyy="7.575" iyz="0" izz="7.708"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="9 0.2 0.4"/>
+      </geometry>
+      <material name="blockmat">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="9 0.2 0.4"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="wall_2">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="10000"/>
+      <inertia ixx="0.283" ixy="0" ixz="0" iyy="7.575" iyz="0" izz="7.708"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.2 9 0.4"/>
+      </geometry>
+      <material name="blockmat">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.2 9 0.4"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="wall_3">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="10000"/>
+      <inertia ixx="0.283" ixy="0" ixz="0" iyy="7.575" iyz="0" izz="7.708"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="9 0.2 0.4"/>
+      </geometry>
+      <material name="blockmat">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="9 0.2 0.4"/>
+      </geometry>
+    </collision>
+  </link>
+
+    <link name="wall_4">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="10000"/>
+      <inertia ixx="0.283" ixy="0" ixz="0" iyy="7.575" iyz="0" izz="7.708"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.2 9 0.4"/>
+      </geometry>
+      <material name="blockmat">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <geometry>
+        <box size="0.2 9 0.4"/>
+      </geometry>
+    </collision>
+  </link>
+
+  
+  <joint name="base" type="fixed">
+  <origin xyz="0 4.5 0" rpy="0 0 0" />
+    <parent link="wall_inside" />
+    <child  link="wall_1" />
+  </joint>
+
+  <joint name="1" type="fixed">
+  <origin xyz="-4.4 -4.4 0" rpy="0 0 0" />
+    <parent link="wall_1" />
+    <child  link="wall_2" />
+  </joint>
+
+  <joint name="2" type="fixed">
+    <origin xyz="4.4 -4.4 0" rpy="0 0 0" />
+    <parent link="wall_2" />
+    <child  link="wall_3" />
+  </joint>
+
+  <joint name="3" type="fixed">
+    <origin xyz="4.4 4.4 0" rpy="0 0 0" />
+    <parent link="wall_3" />
+    <child  link="wall_4" />
+  </joint>
+</robot>
