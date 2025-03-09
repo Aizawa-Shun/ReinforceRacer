@@ -15,20 +15,15 @@
 
 To set up and run the **ReinforceRacer: AI-Powered Autonomous Driving Simulator**, follow these steps:
 
-1. **Download and Extract the Zip File**:
-
-   - Download the provided zip file containing the source code.
-   - Extract the contents of the zip file to a desired directory on your computer.
-
-2. **Navigate to the Project Directory**:
+1. **Clone Repository**:
 
    - Open a terminal (or command prompt) and navigate to the extracted project directory:
 
    ```sh
-   cd path/to/extracted/folder
+   git clone https://github.com/Aizawa-Shun/ReinfoceRacer.git
    ```
 
-3. **Install Required Libraries**:
+2. **Install Required Libraries**:
 
    - Ensure you have Python installed (preferably version 3.7 or higher). You can download Python from [python.org](https://www.python.org/downloads/).
    - Install the required libraries using pip. Run the following command to install all dependencies listed in the `requirements.txt` file:
@@ -36,16 +31,7 @@ To set up and run the **ReinforceRacer: AI-Powered Autonomous Driving Simulator*
    ```sh
    pip install -r requirements.txt
    ```
-
-4. **Install PyBullet**:
-
-   - Ensure you have PyBullet installed. If it's not included in the `requirements.txt` file, install it using:
-
-   ```sh
-   pip install pybullet
-   ```
-
-5. **Run the Simulator**:
+3. **Run the Simulator**:
    - After installing the necessary libraries, you can run the main simulation script. Execute the following command:
    ```sh
    python main.py
