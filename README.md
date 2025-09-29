@@ -1,4 +1,5 @@
 # ReinforceRacer: AI-Powered Autonomous Driving Simulator
+![hero](./image/reinforce-racer.jpg)
 
 **ReinforceRacer: AI-Powered Autonomous Driving Simulator** is an advanced simulation framework designed to train and evaluate reinforcement learning models for autonomous driving. Built on the PyBullet physics engine, this simulator provides a realistic and interactive environment for developing AI algorithms that can control a racecar.
 
@@ -79,3 +80,4 @@ For any questions or inquiries, please contact [email](tech.code.team@gmail.com)
 ---
 
 Enjoy using ReinforceRacer and happy coding!
+
